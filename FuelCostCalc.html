@@ -1,0 +1,62 @@
+<!-- This is a page for comparing fuel cost across two different vehicles -->
+<html>
+<head>
+<title>Vehicle Fuel Cost Calculator</title>
+
+<script src="FuelCostCalc.js"></script>
+
+</head>
+
+<body>
+<h2> Compare Fuel Costs for Two Vehicles</h2>
+
+Enter the necessary variables, then click "Calculate". <br><br>
+
+<table border="1">
+<tr>
+    <th>Common Variables </th>
+    <th>Both Vehicles</th>
+</tr>
+<tr>
+    <td>Estimated Miles Driven Per Year: &nbsp  </td>
+    <td><input type="number" id="VehicleMiles"></td>
+</tr>
+<tr>
+    <td>Estimated Vehicle Life (Years): &nbsp  </td>
+    <td><input type="number" id="VehicleLife"></td>
+</tr>
+<tr>
+    <td>Estimated Fuel Price (Dollars per Gallon): &nbsp  </td>
+    <td><input type="number" id="FuelPrice"></td>
+</tr>
+</table>
+<br>
+<table border="1">
+<tr>
+    <th>Specific Variables </th>
+    <th>Vehicle 1</th>
+    <th>Vehicle 2</th>
+</tr>
+<tr>
+    <td>Vehicle Price (Dollars): &nbsp  </td>
+    <td><input type="number" id="Price1"></td>
+    <td><input type="number" id="Price2"></td>
+</tr>
+<tr>
+    <td>Vehicle Fuel Efficiency (MPG): &nbsp  </td>
+    <td><input type="number" id="Mpg1"></td>
+    <td><input type="number" id="Mpg2"></td>
+</tr>
+</table>
+<br>
+
+<button type="button" id="Calculate" onclick="FuelCostCalc('normal')">Calculate</button> 
+<button type="button" id="Example" onclick="FuelCostCalc('example')">Give me an example</button>
+<br><br>
+
+<div id="Results"> <!-- results go here. --> </div>
+
+</body>
+
+
+</html>
